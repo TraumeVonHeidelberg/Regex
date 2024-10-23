@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form id="regex-form" action="">
+        <div class="form-element">
+            <label for="regex">Regular Expression</label>
+            <input type="text" id="regex" name="regex" placeholder="insert your regular expression" autocomplete="off">
+        </div>
+        <div class="form-element">
+            <label for="test-string">Test String</label>
+            <div class="text-container">
+                <div class="highlighted-text" id="highlighted"></div>
+                <textarea name="test-string" id="test-string" placeholder="insert your test string"></textarea>
+            </div>
+        </div>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
