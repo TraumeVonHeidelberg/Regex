@@ -29,9 +29,14 @@ form {
 	gap: 1.2rem;
 }
 
+.input-box {
+	position: relative;
+}
+
 input,
 textarea {
 	padding: 1.2rem;
+	width: 100%;
 	font-size: 1.6rem;
 	font-family: 'Montserrat', sans-serif;
 	color: #cbcaca;
@@ -44,11 +49,56 @@ textarea:focus {
 	outline: 1px solid rgba(203, 202, 202, 0.4);
 }
 
+.regex-flags {
+	position: absolute;
+	top: 1.2rem;
+	right: 1.2rem;
+	color: rgba(116, 117, 94, 255);
+	cursor: pointer;
+}
+
+.flag-marker {
+	color: #43a55a;
+}
+
+.regex-flags:hover span {
+	color: white;
+}
+
+.flags-list {
+	position: absolute;
+	right: 0;
+	z-index: 50;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+	list-style-type: none;
+	background-color: #232222;
+}
+
+.flags-list li {
+	display: flex;
+	justify-content: space-between;
+	gap: 1.6rem;
+	padding: 1.6rem;
+	cursor: pointer;
+}
+
+.flags-list li:hover {
+	background-color: #403c3c;
+}
+
+.flags-list li:hover .flag-marker{
+	color:white;
+}
+
+ion-icon {
+	color: #43a55a;
+}
 textarea {
 	position: relative;
 	z-index: 1;
 	height: 70vh;
-	width: 100%;
 	resize: none;
 	background-color: transparent;
 	color: #cbcaca;
