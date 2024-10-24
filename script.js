@@ -84,3 +84,9 @@ regexFlags.addEventListener('click', () => {
 	flagsList.style.display = 'flex'
 	event.stopPropagation()
 })
+
+document.addEventListener('click', event => {
+	if (!regexFlags.contains(event.target) && !flagsList.contains(event.target)) {
+		flagsList.style.display = 'none' // Ukrywa listę flag
+	}
+})
